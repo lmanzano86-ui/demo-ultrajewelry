@@ -65,6 +65,13 @@
   .col.full { grid-column:1/-1; }
   .col.full img { height:210px; object-position:top; }
   .nota { text-align:center; font-size:.74rem; color:#a08c5a; margin-top:14px; }
+  /* Galería de prendas */
+  .gcols { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .gcard { border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 8px 22px rgba(150,120,50,.12); border:1px solid #f0e6c8; }
+  .gcard .ph { background:#fdfbf6; padding:10px 10px 0; }
+  .gcard .ph img { width:100%; height:180px; object-fit:cover; display:block; border-radius:10px; }
+  .gcard .t { padding:14px 12px; text-align:center; }
+  .gcard h3 { font-family:Georgia, serif; font-size:.98rem; color:#2b2519; }
   /* Services */
   .servs { display:grid; gap:12px; }
   .serv { display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #f0e6c8; border-radius:16px; padding:16px 18px; box-shadow:0 3px 10px rgba(150,120,50,.07); }
@@ -126,6 +133,8 @@
   body.tema-oscuro .col h3 { color:#f5edd8; }
   body.tema-oscuro .col p { color:#b3a37f; }
   body.tema-oscuro .nota { color:#a3906a; }
+  body.tema-oscuro .gcard { background:#1e1a12; border-color:#3a3122; box-shadow:0 8px 22px rgba(0,0,0,.45); }
+  body.tema-oscuro .gcard h3 { color:#f5edd8; }
   body.tema-oscuro .serv { background:#1e1a12; border-color:#3a3122; box-shadow:0 3px 10px rgba(0,0,0,.4); }
   body.tema-oscuro .serv .i { background:#2b2313; }
   body.tema-oscuro .serv h3 { color:#f5edd8; }
@@ -187,6 +196,23 @@
       <div class="col"><div class="t" style="padding:30px 12px;"><div style="font-size:2.4rem;">⌚</div><h3 data-es="Relojes finos" data-en="Fine watches">Relojes finos</h3><p data-es="Las marcas que buscas" data-en="The brands you want">Las marcas que buscas</p></div></div>
     </div>
     <p class="nota" data-es="Fotos de muestra para la demostración." data-en="Sample photos for demonstration.">Fotos de muestra para la demostración.</p>
+  </section>
+
+  <section style="padding-top:6px;">
+    <h2 data-es="Nuestras <em>prendas</em>" data-en="Our <em>pieces</em>">Nuestras <em>prendas</em></h2>
+    <div class="goldrule"></div>
+    <p class="lede" data-es="Una muestra de los tipos de prendas de la casa" data-en="A look at the kinds of pieces we carry">Una muestra de los tipos de prendas de la casa</p>
+    <div class="gcols">
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-anillo-compromiso.jpg" alt="Anillos de compromiso" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Anillos de compromiso" data-en="Engagement Rings">Anillos de compromiso</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-cadenas.jpg" alt="Cadenas de oro" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Cadenas de oro" data-en="Gold Chains">Cadenas de oro</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-collar.jpg" alt="Collares" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Collares" data-en="Necklaces">Collares</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-pulsera.jpg" alt="Pulseras" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Pulseras" data-en="Bracelets">Pulseras</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-dije-cruz.jpg" alt="Dijes y cruces" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Dijes y cruces" data-en="Pendants &amp; Crosses">Dijes y cruces</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-anillo-hombre.jpg" alt="Anillos para hombre" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Anillos para hombre" data-en="Men's Rings">Anillos para hombre</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-collar-perlas.jpg" alt="Collares de perlas" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Collares de perlas" data-en="Pearl Necklaces">Collares de perlas</h3></div></div>
+      <div class="gcard"><div class="ph"><img src="imgs/galeria-cadena-acento.jpg" alt="Cadenas con acentos" width="291" height="180" loading="lazy"></div><div class="t"><h3 data-es="Cadenas con acentos" data-en="Accent Chains">Cadenas con acentos</h3></div></div>
+    </div>
+    <p class="nota" data-es="Muestra de tipos de prendas. La disponibilidad varía según la tienda." data-en="Sample of piece types. Availability varies by store.">Muestra de tipos de prendas. La disponibilidad varía según la tienda.</p>
   </section>
 
   <section style="padding-top:6px;">
