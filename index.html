@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ultra Jewelry — Tampa, FL</title>
+<meta name="description" content="Ultra Jewelry en Tampa, FL: joyería fina, empeño y compra de oro, piezas personalizadas, financiamiento y apartado. Dos locales: Columbus Drive y Armenia Ave.">
+<link rel="canonical" href="https://lmanzano86-ui.github.io/demo-ultrajewelry/">
+<meta property="og:title" content="Ultra Jewelry — Tampa, FL">
+<meta property="og:description" content="Joyería fina, empeño y compra de oro, piezas personalizadas, financiamiento y apartado. Dos locales en Tampa: Columbus Drive y Armenia Ave.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lmanzano86-ui.github.io/demo-ultrajewelry/">
+<meta property="og:image" content="https://lmanzano86-ui.github.io/demo-ultrajewelry/imgs/cadena.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#faf7f0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"JewelryStore","name":"Ultra Jewelry","url":"https://lmanzano86-ui.github.io/demo-ultrajewelry/","telephone":"+1-813-872-0506","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"3326 W Columbus Dr","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33607","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"16:00"}]},
+{"@type":"JewelryStore","name":"Ultra Jewelry","address":{"@type":"PostalAddress","streetAddress":"8348 N Armenia Ave","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33604","addressCountry":"US"}}
+]}
+</script>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Segoe UI', Arial, sans-serif; background:#faf7f0; color:#2b2519; line-height:1.6; }
@@ -78,17 +94,71 @@
   .loc h3 { font-family:Georgia, serif; color:#9a7b1e; font-size:1rem; margin-bottom:6px; }
   .loc p, .loc a { font-size:.86rem; color:#4a4132; text-decoration:none; line-height:1.7; }
   footer { text-align:center; padding:22px; font-size:.76rem; color:#a08c5a; border-top:1px solid #eee2c2; }
+  /* Selector de diseño (temporal, solo para elegir) */
+  .selector { background:#191510; color:#e9dfc2; padding:12px 14px; text-align:center; font-size:.85rem; border-bottom:2px solid #b8912a; }
+  .selector span { font-weight:700; letter-spacing:.4px; }
+  .selector .sel-btns { margin-top:8px; }
+  .selector button { border:1.5px solid #b8912a; background:transparent; color:#e9dfc2; padding:6px 14px; border-radius:20px; font-weight:700; cursor:pointer; margin:2px; font-size:.8rem; font-family:inherit; }
+  .selector button.activo { background:linear-gradient(135deg,#c9a227,#a8821f); color:#171208; border-color:#c9a227; }
+  /* Tema oscuro: fondo negro/charcoal, letras y acentos dorados */
+  body.tema-oscuro { background:#0f0d0a; color:#ece1c6; }
+  body.tema-oscuro .wrap { background:#14110c; }
+  body.tema-oscuro nav { background:rgba(20,17,12,.97); border-bottom-color:#4a3a17; }
+  body.tema-oscuro nav .brand { color:#d9b64a; }
+  body.tema-oscuro .lang { background:#211b11; border-color:#6e571f; }
+  body.tema-oscuro .lang button { color:#c9b384; }
+  body.tema-oscuro .lang button.on { background:linear-gradient(135deg,#d9b64a,#a8821f); color:#171208; }
+  body.tema-oscuro .hero-img::after { background:linear-gradient(180deg,transparent 55%,#14110c 100%); }
+  body.tema-oscuro .hero .kicker { color:#d9b64a; }
+  body.tema-oscuro .hero h1 { color:#f5edd8; }
+  body.tema-oscuro .hero h1 em { color:#e0bc52; }
+  body.tema-oscuro .hero p { color:#bdb091; }
+  body.tema-oscuro .btn.gold { color:#171208; box-shadow:0 6px 18px rgba(0,0,0,.5); }
+  body.tema-oscuro .btn.line { background:transparent; color:#d9b64a; border-color:#8a6d2f; }
+  body.tema-oscuro .hero .rating { color:#a3906a; }
+  body.tema-oscuro .trust div { background:#1e1a12; border-color:#3a3122; box-shadow:0 3px 10px rgba(0,0,0,.4); }
+  body.tema-oscuro .trust h3 { color:#d9b64a; }
+  body.tema-oscuro section h2 { color:#f5edd8; }
+  body.tema-oscuro section h2 em { color:#e0bc52; }
+  body.tema-oscuro section .lede { color:#b3a37f; }
+  body.tema-oscuro .goldrule { background:#8a6d2f; }
+  body.tema-oscuro .col { background:#1e1a12; border-color:#3a3122; box-shadow:0 8px 22px rgba(0,0,0,.45); }
+  body.tema-oscuro .col h3 { color:#f5edd8; }
+  body.tema-oscuro .col p { color:#b3a37f; }
+  body.tema-oscuro .nota { color:#a3906a; }
+  body.tema-oscuro .serv { background:#1e1a12; border-color:#3a3122; box-shadow:0 3px 10px rgba(0,0,0,.4); }
+  body.tema-oscuro .serv .i { background:#2b2313; }
+  body.tema-oscuro .serv h3 { color:#f5edd8; }
+  body.tema-oscuro .serv p { color:#b3a37f; }
+  body.tema-oscuro .social { background:#1e1a12; border-color:#3a3122; box-shadow:0 8px 22px rgba(0,0,0,.45); }
+  body.tema-oscuro .social a.handle { color:#d9b64a; border-color:#8a6d2f; background:#14110c; }
+  body.tema-oscuro .social p { color:#b3a37f; }
+  body.tema-oscuro .revq { background:#1e1a12; border-color:#3a3122; box-shadow:0 6px 18px rgba(0,0,0,.45); }
+  body.tema-oscuro .revq .stars { color:#e0bc52; }
+  body.tema-oscuro .revq p { color:#e6dab9; }
+  body.tema-oscuro .revq .who { color:#c2a75e; }
+  body.tema-oscuro .rev-cta img { box-shadow:0 6px 18px rgba(0,0,0,.5); }
+  body.tema-oscuro .rev-cta p { color:#d9b64a; }
+  body.tema-oscuro .qr .q { background:#1e1a12; border-color:#3a3122; box-shadow:0 3px 10px rgba(0,0,0,.4); }
+  body.tema-oscuro .qr .q img { background:#fff; }
+  body.tema-oscuro .qr .q p { color:#d9b64a; }
+  body.tema-oscuro .loc { background:#1e1a12; border-color:#3a3122; box-shadow:0 3px 10px rgba(0,0,0,.4); }
+  body.tema-oscuro .loc h3 { color:#d9b64a; }
+  body.tema-oscuro .loc p, body.tema-oscuro .loc a { color:#ddd0ab; }
+  body.tema-oscuro footer { color:#a3906a; border-top-color:#3a3122; }
 </style>
 </head>
 <body>
 <div class="wrap">
+
+  <div class="selector"><span data-es="🎨 Diseño — elige cómo se ve la página (temporal, solo para elegir)" data-en="🎨 Design — choose how the page looks (temporary, just to choose)">🎨 Diseño — elige cómo se ve la página (temporal, solo para elegir)</span><div class="sel-btns"><button type="button" data-tema-btn="tema-marfil" onclick="setTheme('tema-marfil')" data-es="Nº I · Marfil y Dorado" data-en="No. I · Ivory & Gold">Nº I · Marfil y Dorado</button> <button type="button" data-tema-btn="tema-oscuro" onclick="setTheme('tema-oscuro')" data-es="Nº II · Oscuro Dorado" data-en="No. II · Dark & Gold">Nº II · Oscuro Dorado</button></div></div>
 
   <nav>
     <div class="brand">ULTRA JEWELRY</div>
     <div class="lang"><button id="b-es" class="on" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
   </nav>
 
-  <div class="hero-img"><img src="imgs/cadena.jpg" alt="Joyería de oro"></div>
+  <div class="hero-img"><img src="imgs/cadena.jpg" alt="Joyería de oro" width="640" height="340"></div>
   <div class="hero">
     <span class="kicker" data-es="JOYERÍA FINA · TAMPA" data-en="FINE JEWELRY · TAMPA">JOYERÍA FINA · TAMPA</span>
     <h1 data-es='El oro <em>atrae</em> al oro' data-en='Gold <em>attracts</em> gold'>El oro <em>atrae</em> al oro</h1>
@@ -112,8 +182,8 @@
     <div class="goldrule"></div>
     <p class="lede" data-es="Piezas que hablan por sí solas" data-en="Pieces that speak for themselves">Piezas que hablan por sí solas</p>
     <div class="cols">
-      <div class="col full"><img src="imgs/cadena.jpg" alt="Cadenas de oro"><div class="t"><h3 data-es="Cadenas y collares" data-en="Chains & necklaces">Cadenas y collares</h3><p data-es="Oro sólido en todos los quilates" data-en="Solid gold in every karat">Oro sólido en todos los quilates</p></div></div>
-      <div class="col"><img src="imgs/anillo.jpg" alt="Anillo de diamantes"><div class="t"><h3 data-es="Anillos" data-en="Rings">Anillos</h3><p data-es="Compromiso y diseños únicos" data-en="Engagement and unique designs">Compromiso y diseños únicos</p></div></div>
+      <div class="col full"><img src="imgs/cadena.jpg" alt="Cadenas de oro" width="596" height="210" loading="lazy"><div class="t"><h3 data-es="Cadenas y collares" data-en="Chains & necklaces">Cadenas y collares</h3><p data-es="Oro sólido en todos los quilates" data-en="Solid gold in every karat">Oro sólido en todos los quilates</p></div></div>
+      <div class="col"><img src="imgs/anillo.jpg" alt="Anillo de diamantes" width="291" height="180" loading="lazy"><div class="t"><h3 data-es="Anillos" data-en="Rings">Anillos</h3><p data-es="Compromiso y diseños únicos" data-en="Engagement and unique designs">Compromiso y diseños únicos</p></div></div>
       <div class="col"><div class="t" style="padding:30px 12px;"><div style="font-size:2.4rem;">⌚</div><h3 data-es="Relojes finos" data-en="Fine watches">Relojes finos</h3><p data-es="Las marcas que buscas" data-en="The brands you want">Las marcas que buscas</p></div></div>
     </div>
     <p class="nota" data-es="Fotos de muestra para la demostración." data-en="Sample photos for demonstration.">Fotos de muestra para la demostración.</p>
@@ -151,7 +221,7 @@
     <div class="revq"><div class="stars">★★★★★</div><p>"Lugar acogedor con un trato excelente y buenos precios."</p><div class="who">— Ricardo Leiva</div></div>
     <div class="revq"><div class="stars">★★★★★</div><p>"Muy buena atención por parte de las muchachas, un servicio excelente."</p><div class="who">— Marcos Rodriguez</div></div>
     <div class="rev-cta">
-      <img src="qr/qr-review.png" alt="QR reseña en Google">
+      <img src="qr/qr-review.png" alt="QR reseña en Google" width="150" height="150" loading="lazy">
       <p data-es="📱 Escanea para dejarnos tu reseña" data-en="📱 Scan to leave us a review">📱 Escanea para dejarnos tu reseña</p>
       <a class="btn gold" href="https://www.google.com/maps/search/?api=1&query=Ultra+Jewelry+3326+W+Columbus+Dr+Tampa+FL+33607" data-es="⭐ Escribir reseña" data-en="⭐ Write a review">⭐ Escribir reseña</a>
     </div>
@@ -162,8 +232,8 @@
     <div class="goldrule"></div>
     <p class="lede" data-es="Guarda nuestra ubicación" data-en="Save our location">Guarda nuestra ubicación</p>
     <div class="qr">
-      <div class="q"><img src="qr/qr-maps.png" alt="QR ubicación"><p data-es="Cómo llegar" data-en="Directions">Cómo llegar</p></div>
-      <div class="q"><img src="qr/qr-review.png" alt="QR reseñas"><p data-es="Reseñas" data-en="Reviews">Reseñas</p></div>
+      <div class="q"><img src="qr/qr-maps.png" alt="QR ubicación" width="126" height="126" loading="lazy"><p data-es="Cómo llegar" data-en="Directions">Cómo llegar</p></div>
+      <div class="q"><img src="qr/qr-review.png" alt="QR reseñas" width="126" height="126" loading="lazy"><p data-es="Reseñas" data-en="Reviews">Reseñas</p></div>
     </div>
     <div class="locs">
       <div class="loc">
@@ -182,6 +252,20 @@
 
 </div>
 <script>
+function setTheme(t){
+  document.body.classList.toggle('tema-oscuro', t==='tema-oscuro');
+  document.querySelectorAll('[data-tema-btn]').forEach(function(b){
+    b.classList.toggle('activo', b.getAttribute('data-tema-btn')===t);
+  });
+  var m = document.querySelector('meta[name="theme-color"]');
+  if(m){ m.setAttribute('content', t==='tema-oscuro' ? '#14110c' : '#faf7f0'); }
+  try{ localStorage.setItem('uj-tema', t); }catch(e){}
+}
+(function(){
+  var t = null;
+  try{ t = localStorage.getItem('uj-tema'); }catch(e){}
+  setTheme(t==='tema-oscuro' ? 'tema-oscuro' : 'tema-marfil');
+})();
 function setLang(l){
   document.querySelectorAll('[data-es]').forEach(function(el){
     el.innerHTML = el.dataset[l];
